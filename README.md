@@ -8,7 +8,12 @@ This assignment focuses in two fundamental concepts in NLP:
 counts of words in a given corpus and reducing its dimension by performing Singular Value Decomposition (SVD).
 
 2. Prediction-Based Word Vectors: Prediction-based word vectors have demonstrated better performance, such as word2vec and GloVe (which also utilizes the benefit of counts). This assignment explore the embeddings produced by GloVe. 200 dimensional GloVe
-word vectors are imported by using Gensim library and they are reduced to 2 dimensional vectors by performing SVD for ease of visualization. In order to develop an understanding of the word embedding, different similarity tasks are performed. 
+word vectors are imported by using Gensim library and they are reduced to 2 dimensional vectors by performing SVD for ease of visualization. Different similarity tasks are performed in order to develop an understanding of the word embedding. 
 
-## Assignment 2:
-TBD
+## Assignment 2: [word2vec](assignment_2/a2.pdf)
+This assignment focuses on understanding and implementing the word2vec-skip gram algorithm.
+<p align="center">
+<img src="figures/a2/word2vec_skip_gram.png" alt="Word2Vec skip gram algorithm" width="450"/> 
+</p>
+
+![](figures/a2/word2vec_skip_gram.png)
