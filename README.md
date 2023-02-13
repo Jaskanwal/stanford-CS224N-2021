@@ -13,7 +13,7 @@ word vectors are imported by using Gensim library and they are reduced to 2 dime
 ## Assignment 2: [word2vec](assignment_2/a2.pdf)
 This assignment focuses on understanding and implementing the word2vec-skip gram algorithm. The goal of the skip-gram `word2vec` algorithm is to accurately learn the probability distribution P(O|C).
 Given a specific word *o* and a specific word *c*, we want to calculate P(O = *o*|C = *c*), which is the probability
-that word *o* is an `outside` word for *c*, i.e., the probability that o falls within the contextual window of *c*.
+that word *o* is an outside word for *c*, i.e., the probability that o falls within the contextual window of *c*.
 <p align="center">
 <img src="figures/a2/word2vec_skip_gram.png" alt="Word2Vec skip gram algorithm" width="450"/> 
 </p>
