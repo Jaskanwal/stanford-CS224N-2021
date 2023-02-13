@@ -394,7 +394,7 @@ def load_and_preprocess_data(reduced=True):
 
     print("Preprocessing training data...",)
     start = time.time()
-    train_examples = parser.create_instances(train_set) # //TODO: JC did not follow completely
+    train_examples = parser.create_instances(train_set) # //TODO: TO re-visit, JC did not follow completely
     print("took {:.2f} seconds".format(time.time() - start))
 
     return parser, embeddings_matrix, train_examples, dev_set, test_set,

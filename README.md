@@ -24,3 +24,32 @@ Partial derivatives are derived of the loss function considering the *naive-soft
 - In the second part of the assignment, the loss functions and their gradients are implemented. Also the stochastic gradient
 descent optimizer is implemented in order the optimize the loss functions. Finally, the implementation is evaluated by
 training on the Stanford Sentiment Treebank (SST) dataset.
+
+## Assignment 3: [Dependency Parsing](assignment_3/a3.pdf)
+This assignment focuses on building a neural dependency parser using PyTorch. This is the first assignment in the course
+ providing hands on model development experiene using PyTorch. A separate tutorial is provided in order to understand fundamentals
+ of PyTorch.
+ - The first part of the assignment aims on developing understanding of Adam optimizer and use of Dropout as a regularization
+ technique. 
+ - The second part of the assignment focuses on implementing a neural transition-based dependency parser. 
+ A dependency parser analyzes the grammatical structure of a sentence, establishing relationships between
+*head* words, and words which modify those heads. There are multiple types of dependency parsers,
+including transition-based parsers, graph-based parsers, and feature-based parsers. This assignment implements a 
+transition-based parser, which incrementally builds up a parse one step at a time. At every step, the model maintains three
+lists:
+
+    - `stack`: Words that are currently being processed.
+    - `buffer`: Words yet to be processed.
+    - `dependencies`: Dependencies predicted by the parser.
+
+    The model calculates the feature vector based on the embeddings of the top few words in `stack`, `buffer`
+    , and `dependencies`, and performs a transition by selecting one of the three actions: [`shift`, 
+    `left-arc`, and `right-arc`]. Please refer to the assignment description and class notes for a detailed
+    explanation of the three actions. The transitions are performed till no words are left in `buffer` and `stack`.
+    Evaluation of the model is finally performed based on *Unlabeled Attachment Score* (UAS), which
+    is computed as the ratio between number of correctly predicted dependencies and the number of
+    total dependencies despite of the relations
+
+<p align="center">
+<img src="figures/a3/NDP.png" alt="Dependency Parsing" width="450"/> 
+</p>
