@@ -67,3 +67,19 @@ translate sentences from Cherokee to English.
 </p>
 - Part 2, Analyzing NMT Systems: This part of the assignment is focused on developing understanding and hand calculating
  BLUE score for NMT evaluation, understanding reasons why NMT systems can make an error, among other topics.
+ 
+ ## Assignment 5: [Self-Attention, Transformers, and Pretraining](assignment_5/a5.pdf)
+This assignment is an investigation into Transformer self-attention building blocks, and the effects of pretraining.
+It covers mathematical properties of Transformers and self-attention through written questions and provides 
+experience with practical system-building through repurposing an existing codebase. The assignment is split into a 
+written (mathematical) part and a coding part.
+- The first part of the assignments develops intuition about the drawbacks of single headed attention and motivates
+how at any given time-step, multi-headed attention helps the model to effectively attend to multiple words in the 
+sentence.
+- In the second part of the assignment, we get experience with training, pretraining and finetuning language model 
+([miniGPT](https://github.com/karpathy/minGPT)) for a name/birth place question-answering task. First the model is
+trained on limited data without any pretraining and its relatively poor performance is noted. Then the model is pretrained
+on de-noising corrupted span of wikitext, and the pretrained model is finetuned for the question answering task. A 
+significantly higher performance in comparison to training model without any pretraining is observed.
+- The last part of the assignment helps to develop an understanding of why pretaining helps improve the model performance, 
+and gain intuition on difficulties in debugging/identifying incorrect model predictions.
