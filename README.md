@@ -53,3 +53,17 @@ lists:
 <p align="center">
 <img src="figures/a3/NDP.png" alt="Dependency Parsing" width="450"/> 
 </p>
+
+## Assignment 4: [Neural Machine Translation](assignment_4/a4.pdf)
+This assignment is split into two sections: *Neural Machine Translation (NMT) with RNNs* and *Analyzing NMT
+Systems*. The first is primarily coding and implementation focused, whereas the second entirely consists of
+written, analysis questions.
+- Part 1, Neural Machine Translation with RNNs: As a part of this exercise, a sequence-to-sequence (Seq2Seq) network with 
+attention is implemented to build a NMT system. The network architecture is based on a Bidirectional LSTM Encoder and a
+Unidirectional LSTM Decoder with multiplicative cross-attention between Decoder and Encoder. The goal of the system is to 
+translate sentences from Cherokee to English.
+<p align="center">
+<img src="figures/a4/NMT.png" alt="NMT system" width="450"/> 
+</p>
+- Part 2, Analyzing NMT Systems: This part of the assignment is focused on developing understanding and hand calculating
+ BLUE score for NMT evaluation, understanding reasons why NMT systems can make an error, among other topics.
